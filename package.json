@@ -1,0 +1,25 @@
+{
+    "name": "vscode-jbehave",
+    "displayName": "vscode-jbehave",
+    "description": "Jbehave story syntax",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "story",
+            "aliases": ["Jbehave", "story"],
+            "extensions": [".story"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "story",
+            "scopeName": "source.story",
+            "path": "./syntaxes/story.tmLanguage.json"
+        }]
+    }
+}
